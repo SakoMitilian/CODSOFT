@@ -32,7 +32,7 @@ def minimax(depth, is_maximizing):
         for i in range(3):
             for j in range(3):
                 if board[i][j] == " ":
-                    board[i][j] = " "
+                    board[i][j] = "O"
                     score = minimax(depth + 1, False)
                     board[i][j] = " "
                     best_score = max(score, best_score)
